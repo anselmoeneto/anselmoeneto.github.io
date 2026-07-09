@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Serviços</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #1c1917; }
+
+        /* Bloco da seção de serviços */
+        .secao-servicos {
+            padding: 80px 40px;
+            max-width: 1200px;      /* Centraliza e limita a largura da seção na tela */
+            margin: 0 auto;         /* Alinha a seção inteira no meio da página */
+        }
+
+        /* Título da seção */
+        .titulo-secao {
+            text-align: center;
+            color: #f8fafc;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        /* Grade que segura os cartões de serviços */
+        .grade-servicos {
+            display: grid;          /* Ativa o modo de grade matemática */
+            grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas de tamanhos iguais */
+            gap: 30px;              /* Espaçamento entre os cartões */
+        }
+
+        /* O Cartão (Card) do serviço individual */
+        .cartao-servico {
+            background-color: #0c0a09; /* Fundo mais escuro que a página para dar destaque */
+            border: 1px solid #292524; /* Borda bem fina */
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;    /* Alinha o conteúdo interno em pé (vertical) */
+            justify-content: space-between; /* Empurra o nome/texto para o topo e o preço para a base */
+            transition: 0.3s;
+        }
+
+        /* Efeito de subir de leve o cartão ao passar o mouse */
+        .cartao-servico:hover {
+            transform: translateY(-5px); /* Move 5 pixels para cima */
+        }
+
+        /* Nome do serviço */
+        .nome-servico {
+            color: #e7e5e4;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        /* Descrição do serviço */
+        .detalhe-servico {
+            color: #a8a29e;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Rodapé do cartão (Tempo e Preço) */
+        .rodape-cartao {
+            border-top: 1px solid #1c1917; /* Linha divisória interna */
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between; /* Tempo na esquerda, preço na direita */
+            align-items: center;
+        }
+
+        .tempo {
+            color: #78716c;
+            font-size: 12px;
+        }
+
+        .preco {
+            color: #f59e0b;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="secao-servicos">
+        <h2 class="titulo-secao">Nossos Serviços</h2>
+
+        <div class="grade-servicos">
+            
+            <div class="cartao-servico">
+                <div>
+                    <h3 class="nome-servico">Corte Clássico</h3>
+                    <p class="detalhe-servico">Corte tradicional feito na tesoura ou máquina, com lavagem e finalização inclusas.</p>
+                </div>
+                <div class="rodape-cartao">
+                    <span class="tempo">30 min</span>
+                    <span class="preco">R$ 50</span>
+                </div>
+            </div>
+
+            <div class="cartao-servico">
+                <div>
+                    <h3 class="nome-servico">Barba de Respeito</h3>
+                    <p class="detalhe-servico">Modelagem completa com uso de toalha quente, óleos essenciais e acabamento na navalha.</p>
+                </div>
+                <div class="rodape-cartao">
+                    <span class="tempo">30 min</span>
+                    <span class="preco">R$ 40</span>
+                </div>
+            </div>
+
+            <div class="cartao-servico">
+                <div>
+                    <h3 class="nome-servico">Combo Premium</h3>
+                    <p class="detalhe-servico">A união do nosso corte exclusivo com o tratamento completo de barba tradicional.</p>
+                </div>
+                <div class="rodape-cartao">
+                    <span class="tempo">60 min</span>
+                    <span class="preco">R$ 80</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

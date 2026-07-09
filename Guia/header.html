@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Cabeçalho</title>
+    <style>
+        /* Estilos Gerais para o teste fazer sentido */
+        body {
+            margin: 0;
+            background-color: #1c1917; /* Fundo escuro */
+            font-family: sans-serif;
+        }
+
+        /* Estrutura principal do cabeçalho */
+        .cabecalho {
+            position: fixed;       /* Deixa o menu fixo no topo ao rolar a página */
+            top: 0;
+            left: 0;
+            width: 100%;           /* Ocupa toda a largura da tela */
+            height: 80px;          /* Altura fixa do topo */
+            background-color: rgba(12, 10, 9, 0.9); /* Fundo quase preto com transparência */
+            border-bottom: 1px solid #292524; /* Linha sutil de divisão no fundo */
+            display: flex;         /* Ativa o modo flexível para alinhar os itens */
+            align-items: center;   /* Alinha o logotipo e o menu verticalmente no centro */
+            justify-content: space-between; /* Empurra o logo para a esquerda e o botão para a direita */
+            padding: 0 40px;       /* Espaçamento interno nas laterais */
+            box-sizing: border-box; /* Garante que o padding não quebre a largura de 100% */
+            z-index: 1000;         /* Faz com que o menu fique sempre por cima de tudo */
+        }
+
+        /* Estilo do Logotipo */
+        .logotipo {
+            color: #f59e0b;        /* Cor âmbar/ouro */
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;   /* Espaçamento entre as letras */
+        }
+
+        /* Menu de Links */
+        .menu-navegacao {
+            display: flex;         /* Coloca a lista de links deitada (em linha) */
+            gap: 30px;             /* Espaço entre cada link do menu */
+            list-style: none;      /* Remove aquelas bolinhas padrão de lista */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo de cada link */
+        .menu-link {
+            color: #d6d3d1;        /* Cor do texto clara */
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase; /* Transforma o texto em maiúsculo */
+            transition: 0.3s;      /* Deixa a mudança de cor suave */
+        }
+
+        /* Efeito quando passa o mouse no link */
+        .menu-link:hover {
+            color: #f59e0b;        /* Muda para a cor ouro */
+        }
+
+        /* Botão de Agendamento */
+        .botao-agendar {
+            background-color: #f59e0b; /* Fundo ouro */
+            color: #0c0a09;            /* Texto quase preto */
+            text-decoration: none;
+            padding: 10px 20px;        /* Espaço interno do botão (cima/baixo, lados) */
+            border-radius: 4px;        /* Arredonda os cantos */
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .botao-agendar:hover {
+            background-color: #d97706; /* Escurece o botão de leve ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logotipo">VIKING BARBER</div>
+        
+        <nav>
+            <ul class="menu-navegacao">
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#servicos" class="menu-link">Serviços</a></li>
+                <li><a href="#produtos" class="menu-link">Produtos</a></li>
+                <li><a href="#equipe" class="menu-link">Equipe</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="#" class="botao-agendar">Agendar Horário</a>
+        </div>
+    </header>
+
+</body>
+</html>

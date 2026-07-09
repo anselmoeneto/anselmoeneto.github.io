@@ -1,0 +1,31 @@
+:root {
+  --grafite-escuro: #1c1917;
+  --preto: #0c0a09;
+  --ouro: #f59e0b;
+  --ouro-escuro: #d97706;
+  --branco: #f8fafc;
+  --cinza: #a8a29e;
+  --cinza-medio: #78716c;
+  --cinza-escuro: #292524;
+}
+
+@font-face {
+  font-family: Cinzel-Bold;
+  src: url(../fonts/Cinzel-Bold.ttf);
+}
+@font-face {
+  font-family: Cinzel-Regular;
+  src: url(../fonts/Cinzel-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  background: var(--grafite-escuro);
+}

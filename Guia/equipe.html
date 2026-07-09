@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Equipe</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #1c1917; }
+
+        .secao-equipe {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            color: #f8fafc;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .grade-equipe {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 barbeiros lado a lado */
+            gap: 25px;
+        }
+
+        /* Cartão do profissional */
+        .perfil-barbeiro {
+            background-color: #0c0a09;
+            border: 1px solid #292524;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;             /* Centraliza a foto, nome e cargo */
+        }
+
+        /* Círculo para simular o rosto do barbeiro */
+        .circulo-foto {
+            width: 96px;
+            height: 96px;
+            background-color: #1c1917;
+            border-radius: 50%;             /* Transforma o quadrado em um círculo perfeito */
+            margin: 0 auto 20px auto;       /* Centraliza o círculo horizontalmente e joga margem para baixo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #44403c;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nome-barbeiro {
+            color: #f8fafc;
+            font-size: 18px;
+            margin: 0 0 5px 0;
+        }
+
+        .cargo-barbeiro {
+            color: #f59e0b;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="secao-equipe">
+        <h2 class="titulo-secao">Nossos Especialistas</h2>
+
+        <div class="grade-equipe">
+            
+            <div class="perfil-barbeiro">
+                <div class="circulo-foto">M</div>
+                <h3 class="nome-barbeiro">Marcus</h3>
+                <span class="cargo-barbeiro">Master Barber</span>
+            </div>
+
+            <div class="perfil-barbeiro">
+                <div class="circulo-foto">A</div>
+                <h3 class="nome-barbeiro">Alex</h3>
+                <span class="cargo-barbeiro">Especialista Fade</span>
+            </div>
+
+            <div class="perfil-barbeiro">
+                <div class="circulo-foto">T</div>
+                <h3 class="nome-barbeiro">Thiago</h3>
+                <span class="cargo-barbeiro">Visagista Técnico</span>
+            </div>
+
+            <div class="perfil-barbeiro">
+                <div class="circulo-foto">L</div>
+                <h3 class="nome-barbeiro">Lucas</h3>
+                <span class="cargo-barbeiro">Cortes Modernos</span>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

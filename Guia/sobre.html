@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Sobre Nós</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #0c0a09; }
+
+        /* Contêiner principal da seção */
+        .secao-sobre {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            /* Divide a seção em duas colunas grandes de tamanhos iguais (texto na esquerda, números na direita) */
+            grid-template-columns: 1fr 1fr; 
+            gap: 50px;
+            align-items: center; /* Alinha os dois lados verticalmente pelo centro */
+        }
+
+        /* Título menor de introdução */
+        .subtitulo-sobre {
+            color: #f59e0b;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Título principal do texto */
+        .titulo-sobre {
+            color: #f8fafc;
+            font-size: 32px;
+            margin: 10px 0 25px 0;
+        }
+
+        /* Parágrafos de texto */
+        .texto-sobre {
+            color: #a8a29e;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Bloco de citação de destaque */
+        .citacao-sobre {
+            border-left: 3px solid #f59e0b; /* Barra amarela decorativa na esquerda */
+            padding-left: 15px;            /* Afasta o texto da barra lateral */
+            font-style: italic;            /* Deixa o texto em itálico */
+            color: #d6d3d1;
+            line-height: 1.5;
+        }
+
+        /* Grade menor para organizar as caixas de estatísticas */
+        .grade-estatisticas {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 colunas dentro do lado direito */
+            gap: 20px;
+        }
+
+        /* Caixa individual de estatística */
+        .caixa-estatistica {
+            background-color: #1c1917;    /* Fundo ligeiramente mais claro que o fundo geral */
+            border: 1px solid #292524;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;            /* Centraliza os números e os textos */
+        }
+
+        /* O número grande em destaque */
+        .numero-destaque {
+            display: block;                /* Faz o número ocupar a linha toda sozinho */
+            color: #f59e0b;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Descrição do número */
+        .texto-estatistica {
+            color: #a8a29e;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="secao-sobre">
+        <div>
+            <span class="subtitulo-sobre">Nossa História</span>
+            <h2 class="titulo-sobre">Tradição, navalha afiada e boa conversa</h2>
+            <p class="texto-sobre">
+                A Viking Barber nasceu do desejo de resgatar a verdadeira essência das barbearias clássicas. Aqui, cada detalhe foi planejado para criar um ambiente acolhedor e exclusivamente dedicado ao cuidado masculino.
+            </p>
+            <blockquote class="citacao-sobre">
+                "Não vendemos cortes de cabelo. Entregamos autoestima, confiança e um momento de pausa na rotina acelerada do homem moderno."
+            </blockquote>
+        </div>
+
+        <div class="grade-estatisticas">
+            <div class="caixa-estatistica">
+                <span class="numero-destaque">5+</span>
+                <span class="texto-estatistica">Anos de Estrada</span>
+            </div>
+            <div class="caixa-estatistica">
+                <span class="numero-destaque">12k+</span>
+                <span class="texto-estatistica">Barbas Feitas</span>
+            </div>
+            <div class="caixa-estatistica">
+                <span class="numero-destaque">100%</span>
+                <span class="texto-estatistica">Satisfação</span>
+            </div>
+            <div class="caixa-estatistica">
+                <span class="numero-destaque">4</span>
+                <span class="texto-estatistica">Especialistas</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

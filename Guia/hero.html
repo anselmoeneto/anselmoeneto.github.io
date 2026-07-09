@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Introdução</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; }
+
+        /* Seção inteira de introdução */
+        .introducao {
+            position: relative;     /* Permite posicionar a foto de fundo de forma absoluta dentro dele */
+            min-height: 100vh;      /* Ocupa no mínimo 100% da altura da tela do usuário */
+            background-color: #1c1917; /* Cor de fundo caso a imagem falhe */
+            display: flex;          /* Ativa o flexbox */
+            align-items: center;    /* Centraliza o conteúdo verticalmente */
+            justify-content: center;/* Centraliza o conteúdo horizontalmente */
+            text-align: center;     /* Alinha os textos no meio */
+            padding: 0 20px;
+            overflow: hidden;       /* Garante que nada saia para fora da seção */
+        }
+
+        /* Foto de fundo borrada/escura */
+        .imagem-fundo {
+            position: absolute;     /* Preenche o fundo da seção */
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;  /* Faz a imagem cobrir todo o espaço sem distorcer */
+            background-position: center; /* Centraliza a foto */
+            opacity: 0.1;           /* Deixa bem transparente (10%) para não atrapalhar a leitura */
+            z-index: 1;             /* Fica atrás do texto */
+        }
+
+        /* Caixa de conteúdo (Segura os textos e botões) */
+        .conteudo-introducao {
+            position: relative;
+            z-index: 2;             /* Fica na frente da imagem de fundo */
+            max-width: 800px;       /* Impede que o texto fique largo demais em telas grandes */
+        }
+
+        /* Subtítulo pequeno no topo */
+        .subtitulo-topo {
+            color: #f59e0b;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        /* Título Principal */
+        .titulo-principal {
+            color: #f8fafc;
+            font-size: 50px;
+            margin: 0 0 20px 0;
+            line-height: 1.2;       /* Ajusta o espaçamento entre as linhas do título */
+        }
+
+        /* Destaque em amarelo no título */
+        .texto-amarelo {
+            color: #f59e0b;
+        }
+
+        /* Texto de descrição */
+        .descricao-introducao {
+            color: #a8a29e;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Grupo de botões lado a lado */
+        .grupo-botoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Botão Vazado (Apenas borda) */
+        .botao-borda {
+            border: 2px solid #f59e0b;
+            color: #f59e0b;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .botao-borda:hover {
+            background-color: rgba(245, 158, 11, 0.1); /* Fundo amarelo bem transparente */
+        }
+
+        /* Botão Cheio */
+        .botao-cheio {
+            background-color: #f59e0b;
+            color: #0c0a09;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .botao-cheio:hover {
+            background-color: #d97706;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="introducao">
+        <div class="imagem-fundo"></div>
+
+        <div class="conteudo-introducao">
+            <p class="subtitulo-topo">Desde 2018 trazendo tradição e estilo</p>
+            <h1 class="titulo-principal">
+                Mais que um corte, uma <span class="texto-amarelo">experiência</span>.
+            </h1>
+            <p class="descricao-introducao">
+                Aliamos as técnicas clássicas da barbearia old school ao que há de mais moderno no mercado visual masculino. Venha relaxar, tomar um café e renovar seu visual.
+            </p>
+            <div class="grupo-botoes">
+                <a href="#" class="botao-borda">Ver Serviços</a>
+                <a href="#" class="botao-cheio">Garantir Meu Horário</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

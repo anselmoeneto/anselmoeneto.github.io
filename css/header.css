@@ -1,0 +1,50 @@
+.container-cabecalho {
+  width: 100%;
+  background-color: var(--preto);
+  border-bottom: 2px solid var(--cinza-escuro);
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logotipo {
+  color: var(--ouro);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Cinzel-Regular;
+}
+
+.menu-cabecalho {
+  display: flex;
+  gap: 20px;
+  font-family: Montserrat-Regular;
+}
+
+.menu-cabecalho a {
+  text-transform: uppercase;
+  color: var(--cinza);
+  font-size: 1rem;
+}
+
+.menu-cabecalho a:hover {
+  color: var(--ouro);
+}
+
+.botao-cabecalho {
+  text-transform: uppercase;
+  background: var(--ouro);
+  color: var(--preto);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: Montserrat-Regular;
+  font-size: 1rem;
+}
+
+.botao-cabecalho:hover {
+  background: var(--ouro-escuro);
+}

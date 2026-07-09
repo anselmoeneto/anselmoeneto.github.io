@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudo - Produtos</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #0c0a09; }
+
+        .secao-produtos {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            color: #f8fafc;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        /* Grade configurada para exibir 4 produtos por linha */
+        .grade-produtos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+            gap: 20px;
+        }
+
+        /* Bloco do produto individual */
+        .item-produto {
+            background-color: #1c1917;
+            border: 1px solid #292524;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        /* Muda a cor da borda ao passar o mouse para dar feedback visual */
+        .item-produto:hover {
+            border-color: #f59e0b;
+        }
+
+        /* Espaço reservado para a foto do produto */
+        .foto-produto {
+            background-color: #0c0a09;
+            width: 100%;
+            aspect-ratio: 1 / 1;          /* Força a caixa a ser perfeitamente quadrada */
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #57534e;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nome-produto {
+            color: #f8fafc;
+            font-size: 16px;
+            margin: 0 0 5px 0;
+        }
+
+        .descricao-produto {
+            color: #a8a29e;
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        /* Base do produto onde fica o preço e local de venda */
+        .base-produto {
+            border-top: 1px solid #292524;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preco-produto {
+            color: #f59e0b;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .local-venda {
+            color: #78716c;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="secao-produtos">
+        <h2 class="titulo-secao">Produtos Premium</h2>
+
+        <div class="grade-produtos">
+            
+            <div class="item-produto">
+                <div>
+                    <div class="foto-produto">[ Pomada Matte ]</div>
+                    <h3 class="nome-produto">Pomada Modeladora</h3>
+                    <p class="descricao-produto">Fixação forte e efeito matte natural para o cabelo.</p>
+                </div>
+                <div class="base-produto">
+                    <span class="preco-produto">R$ 45</span>
+                    <span class="local-venda">Balcão</span>
+                </div>
+            </div>
+
+            <div class="item-produto">
+                <div>
+                    <div class="foto-produto">[ Óleo Hidratante ]</div>
+                    <h3 class="nome-produto">Óleo de Barba</h3>
+                    <p class="descricao-produto">Hidratação profunda para fios grossos e ressecados.</p>
+                </div>
+                <div class="base-produto">
+                    <span class="preco-produto">R$ 38</span>
+                    <span class="local-venda">Balcão</span>
+                </div>
+            </div>
+
+            <div class="item-produto">
+                <div>
+                    <div class="foto-produto">[ Shampoo Ice ]</div>
+                    <h3 class="nome-produto">Shampoo de Cabelo</h3>
+                    <p class="descricao-produto">Limpeza refrescante com mentol e controle de oleosidade.</p>
+                </div>
+                <div class="base-produto">
+                    <span class="preco-produto">R$ 35</span>
+                    <span class="local-venda">Balcão</span>
+                </div>
+            </div>
+
+            <div class="item-produto">
+                <div>
+                    <div class="foto-produto">[ Balm Alinhador ]</div>
+                    <h3 class="nome-produto">Balm de Barba</h3>
+                    <p class="descricao-produto">Alinha, amacia e reduz o frizz dos pelos do rosto.</p>
+                </div>
+                <div class="base-produto">
+                    <span class="preco-produto">R$ 42</span>
+                    <span class="local-venda">Balcão</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
