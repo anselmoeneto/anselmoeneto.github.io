@@ -3,6 +3,7 @@ const navMenu = document.querySelector(".header__menu");
 
 menu.addEventListener("click", () => {
   navMenu.classList.toggle("is-active");
+  menu.classList.toggle("is-active");
 });
 
 document.addEventListener("click", (event) => {
@@ -11,9 +12,11 @@ document.addEventListener("click", (event) => {
 
   if (!clicouNoMenu && !clicouNoBotao) {
     navMenu.classList.remove("is-active");
+    menu.classList.remove("is-active");
   }
+});
 
-  navMenu.addEventListener("click", () => {
-    navMenu.classList.remove("is-active");
-  });
+navMenu.addEventListener("click", () => {
+  navMenu.classList.remove("is-active");
+  menu.classList.remove("is-active");
 });

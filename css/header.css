@@ -42,18 +42,16 @@
   transition: width 0.3s ease;
 }
 
-.header__menu a:hover::after {
-  width: 100%;
-}
-
-.header__menu a:focus-visible::after {
-  width: 100%;
-}
-
 .header__menu--hamburguer {
   height: 28px;
   width: 28px;
   display: none;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.header__menu--hamburguer.is-active {
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -90,7 +88,7 @@
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
-    border: 1px solid var(--primary);
+    border-color: var(--primary);
   }
 
   .header__menu li {
@@ -106,6 +104,7 @@
     text-align: center;
   }
 }
+
 @media (hover: hover) {
   .header__menu a:hover::after {
     width: 100%;
